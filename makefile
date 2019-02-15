@@ -1,5 +1,5 @@
 CC := g++-8
-CCOPTS := -Wall -Wextra -O -lstdc++fs -std=c++17
+CCOPTS := -Wall -Wextra -O -lstdc++fs -std=c++17 -o scrub
 
 main.o: main.cpp DOD522022M.h DOD522022MECE.h DPE.h SPE.h EraseALL.h
 	$(CC) $(CCOPTS) main.cpp DOD522022M.cpp DOD522022M.h DOD522022MECE.cpp DOD522022MECE.h DPE.cpp DPE.h SPE.cpp SPE.h EraseALL.cpp EraseALL.h

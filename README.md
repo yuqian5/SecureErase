@@ -1,5 +1,9 @@
+Only work on MacOS
+
+Compile using make
+
 command from terminal
-    ./securewipe [drive] -op [option]
+    ./scrub [drive] -op [option]
 
     [drive] = disk1
 

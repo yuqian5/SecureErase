@@ -5,7 +5,7 @@ Compile using make
 command from terminal
     ./scrub [drive] -op [option]
 
-    [drive] = disk1
+    [drive] ex: disk1 or disk2
 
     -op 1 = standard DOD 5220.22-M
         run1:0 run2:1 run3:random

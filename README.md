@@ -1,4 +1,4 @@
-Only work on MacOS
+Only work on MacOS, may add a Linux or windows version later.
 
 Compile using make
 

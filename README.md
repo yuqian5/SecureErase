@@ -1,8 +1,11 @@
-Only work on MacOS, may add a Linux or windows version later.
+# DiskScrubber
 
-Compile using make
+Only work on MacOS since I'm using the disk_ulti to format the drive before secure earse.
 
-command from terminal
+
+## Compile using make
+
+## command from terminal
     ./scrub [drive] -op [option]
 
     [drive] ex: disk1 or disk2

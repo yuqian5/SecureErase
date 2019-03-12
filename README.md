@@ -4,8 +4,10 @@ Only work on MacOS since I'm using the disk_ulti to format the drive before secu
 
 
 ## Compile using make
+   
+Require GNU g++, not clang. So make sure you links are set right.
 
-## command from terminal
+## Command from terminal
     ./scrub [drive] -op [option]
 
     [drive] ex: disk1 or disk2

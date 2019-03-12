@@ -19,12 +19,17 @@ void SPE::run_with_random() {
     system("touch runrandom"); //create file to write to
     int file = open("runrandom",O_WRONLY);
 
-    char zero[4000000] = {0};
+    // starting random machine
+    random_device rng;
+    mt19937 gen(rng());
+    uniform_int_distribution<int> uniform_dist(1, RAND_MAX);
+
+    char rand[4000000] = {0};
     for (long unsigned int i = 0; i < (size/4000000); ++i) {
-        for (auto &x : zero){
-            x = (char) ((random() > RAND_MAX/2) ? 0 : 17);
+        for (auto &x : rand){
+            x = (char) ((uniform_dist(gen) > RAND_MAX/2) ? 0 : 255);
         }
-        write(file,&zero, sizeof(zero)* sizeof(char));
+        write(file,&rand, sizeof(rand)* sizeof(char));
     }
 
     close(file);

@@ -34,12 +34,12 @@ void DPE::run_with_1() {
     system("touch run1"); //create file to write to
     int file = open("run1",O_WRONLY);
 
-    char zero[4000000] = {0};
-    for (auto &x : zero){
-        x = 17; // 17 in hex = 11
+    char one[4000000] = {0};
+    for (auto &x : one){
+        x = 255; // 255 in hex = 11111111
     }
     for (long unsigned int i = 0; i < (size/4000000); ++i) {
-        write(file,&zero, sizeof(zero)* sizeof(char));
+        write(file,&one, sizeof(one)* sizeof(char));
     }
 
     close(file);

@@ -1,6 +1,7 @@
 # DiskScrubber
 
 Only work on MacOS since I'm using the disk_ulti to format the drive before secure earse.
+May add Linux & Windows Support later.
 
 
 ## Compile using make

@@ -23,3 +23,9 @@ Require GNU g++, not clang. So make sure you links are set right.
         run1: 0 run2: 1
     -op 5 single pass random eases
         run1: random
+
+## Error Codes
+Code 100 : commandline argument error
+Code 101 : User Aborted
+Code 102 : commandline argument op invalid, must be 1,2,3,4,5
+Code 103 : diskutil erase could not erase and reformat drive, maybe some process is using it

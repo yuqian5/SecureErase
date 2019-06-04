@@ -8,6 +8,9 @@ May add Linux & Windows Support later.
    
 Require GNU g++, not clang. So make sure you links are set right.
 
+    To change compiler, complete the following change in makefile:
+    CHANGE CC := g++-8 TO CC := [compiler you want]
+
 ## Command from terminal
     ./scrub [drive] -op [option]
 

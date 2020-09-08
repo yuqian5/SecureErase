@@ -2,12 +2,12 @@
 #include <unistd.h>
 #include <filesystem>
 
-#include "DOD522022M.h"
-#include "DOD522022MECE.h"
-#include "DPE.h"
-#include "SPE.h"
+#include "../include/DOD522022M.h"
+#include "../include/DOD522022MECE.h"
+#include "../include/DPE.h"
+#include "../include/SPE.h"
 
-#include "EraseALL.h"
+#include "../include/EraseALL.h"
 
 using namespace std;
 

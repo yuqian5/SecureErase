@@ -1,5 +1,5 @@
-#include "DPE.h"
-#include "EraseALL.h"
+#include "../include/DPE.h"
+#include "../include/EraseALL.h"
 
 DPE::DPE(string diskName) {
     disk = std::move(diskName);

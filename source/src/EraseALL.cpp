@@ -1,6 +1,6 @@
 #pragma once
 
-#include "EraseALL.h"
+#include "../include/EraseALL.h"
 
 EraseALL::EraseALL(string diskName){
     disk = std::move(diskName);

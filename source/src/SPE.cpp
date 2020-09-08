@@ -1,5 +1,5 @@
-#include "SPE.h"
-#include "EraseALL.h"
+#include "../include/SPE.h"
+#include "../include/EraseALL.h"
 
 SPE::SPE(string diskName) {
     disk = std::move(diskName);

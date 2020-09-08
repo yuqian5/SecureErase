@@ -1,18 +1,13 @@
-# DiskScrubber
+# SecureErase
 
-Only work on MacOS since I'm using the disk_ulti to format the drive before secure earse.
-May add Linux & Windows Support later.
+MacOS only.
 
-
-## Compile using make
+## Compile using cmake
    
-Require GNU g++, not clang. So make sure you links are set right.
-
-    To change compiler, complete the following change in makefile:
-    CHANGE CC := g++-8 TO CC := [compiler you want]
+    cmake /source/CMakeLists.txt
 
 ## Command from terminal
-    ./scrub [drive] -op [option]
+    ./se [drive] -op [option]
 
     [drive] ex: disk1 or disk2
 
@@ -28,10 +23,7 @@ Require GNU g++, not clang. So make sure you links are set right.
         run1: random
 
 ## Error Codes
-Code 100 : commandline argument error
-
-Code 101 : User Aborted
-
-Code 102 : commandline argument op invalid, must be 1,2,3,4,5
-
-Code 103 : diskutil erase could not erase and reformat drive, maybe some process is using it
+    Code 100 : commandline argument error
+    Code 101 : User Aborted
+    Code 102 : commandline argument op invalid, must be 1,2,3,4,5
+    Code 103 : diskutil erase could not erase and reformat drive, maybe some process is using it
